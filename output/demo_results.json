@@ -1,0 +1,251 @@
+{
+  "individual_analyses": [
+    {
+      "original_text": "यह movie बहुत अच्छी है, I loved it!",
+      "preprocessing": {
+        "is_code_mixed": true,
+        "language_distribution": {
+          "english": 0.5,
+          "hindi": 0.5
+        },
+        "dominant_language": "english"
+      },
+      "hate_speech": {
+        "is_hate_speech": false,
+        "confidence": 1.0,
+        "score": 0.0,
+        "detected_keywords": [],
+        "severity": "low"
+      },
+      "mood": {
+        "primary_mood": "neutral",
+        "confidence": 0.5,
+        "mood_distribution": {
+          "happy": 0,
+          "sad": 0,
+          "angry": 0,
+          "neutral": 0
+        },
+        "intensity": "medium"
+      },
+      "sentiment": {
+        "primary_sentiment": "positive",
+        "polarity": "positive",
+        "confidence": 1.0,
+        "sentiment_distribution": {
+          "positive": 1,
+          "negative": 0,
+          "neutral": 0
+        },
+        "valence": 1.0,
+        "intensity": "high"
+      },
+      "test_name": "Code-mixed positive"
+    },
+    {
+      "original_text": "यह film बकवास है, waste of time",
+      "preprocessing": {
+        "is_code_mixed": true,
+        "language_distribution": {
+          "english": 0.625,
+          "hindi": 0.375
+        },
+        "dominant_language": "english"
+      },
+      "hate_speech": {
+        "is_hate_speech": true,
+        "confidence": 0.1428571428571429,
+        "score": 0.42857142857142855,
+        "detected_keywords": [
+          "बकवास"
+        ],
+        "severity": "medium"
+      },
+      "mood": {
+        "primary_mood": "neutral",
+        "confidence": 0.5,
+        "mood_distribution": {
+          "happy": 0,
+          "sad": 0,
+          "angry": 0,
+          "neutral": 0
+        },
+        "intensity": "medium"
+      },
+      "sentiment": {
+        "primary_sentiment": "neutral",
+        "polarity": "neutral",
+        "confidence": 0.5,
+        "sentiment_distribution": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 0
+        },
+        "valence": 0.0,
+        "intensity": "medium"
+      },
+      "test_name": "Code-mixed negative"
+    },
+    {
+      "original_text": "This is stupid and terrible",
+      "preprocessing": {
+        "is_code_mixed": false,
+        "language_distribution": {
+          "english": 1.0,
+          "hindi": 0.0
+        },
+        "dominant_language": "english"
+      },
+      "hate_speech": {
+        "is_hate_speech": true,
+        "confidence": 1.0,
+        "score": 1.0,
+        "detected_keywords": [
+          "stupid",
+          "terrible"
+        ],
+        "severity": "high"
+      },
+      "mood": {
+        "primary_mood": "neutral",
+        "confidence": 0.5,
+        "mood_distribution": {
+          "happy": 0,
+          "sad": 0,
+          "angry": 0,
+          "neutral": 0
+        },
+        "intensity": "medium"
+      },
+      "sentiment": {
+        "primary_sentiment": "negative",
+        "polarity": "negative",
+        "confidence": 1.0,
+        "sentiment_distribution": {
+          "positive": 0,
+          "negative": 1,
+          "neutral": 0
+        },
+        "valence": -1.0,
+        "intensity": "high"
+      },
+      "test_name": "English hate speech"
+    },
+    {
+      "original_text": "यह फिल्म बहुत शानदार है",
+      "preprocessing": {
+        "is_code_mixed": false,
+        "language_distribution": {
+          "english": 0.0,
+          "hindi": 1.0
+        },
+        "dominant_language": "hindi"
+      },
+      "hate_speech": {
+        "is_hate_speech": false,
+        "confidence": 1.0,
+        "score": 0.0,
+        "detected_keywords": [],
+        "severity": "low"
+      },
+      "mood": {
+        "primary_mood": "neutral",
+        "confidence": 0.5,
+        "mood_distribution": {
+          "happy": 0,
+          "sad": 0,
+          "angry": 0,
+          "neutral": 0
+        },
+        "intensity": "medium"
+      },
+      "sentiment": {
+        "primary_sentiment": "neutral",
+        "polarity": "neutral",
+        "confidence": 0.5,
+        "sentiment_distribution": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 0
+        },
+        "valence": 0.0,
+        "intensity": "medium"
+      },
+      "test_name": "Hindi positive"
+    },
+    {
+      "original_text": "Main kal office जाऊंगा",
+      "preprocessing": {
+        "is_code_mixed": true,
+        "language_distribution": {
+          "english": 0.6842105263157895,
+          "hindi": 0.3157894736842105
+        },
+        "dominant_language": "english"
+      },
+      "hate_speech": {
+        "is_hate_speech": false,
+        "confidence": 1.0,
+        "score": 0.0,
+        "detected_keywords": [],
+        "severity": "low"
+      },
+      "mood": {
+        "primary_mood": "neutral",
+        "confidence": 0.5,
+        "mood_distribution": {
+          "happy": 0,
+          "sad": 0,
+          "angry": 0,
+          "neutral": 0
+        },
+        "intensity": "medium"
+      },
+      "sentiment": {
+        "primary_sentiment": "neutral",
+        "polarity": "neutral",
+        "confidence": 0.5,
+        "sentiment_distribution": {
+          "positive": 0,
+          "negative": 0,
+          "neutral": 0
+        },
+        "valence": 0.0,
+        "intensity": "medium"
+      },
+      "test_name": "Neutral mixed"
+    }
+  ],
+  "transition_analysis": {
+    "transitions_detected": true,
+    "mood_transitions": [
+      {
+        "position": 1,
+        "from_mood": "happy",
+        "to_mood": "neutral",
+        "confidence_change": 0.5
+      },
+      {
+        "position": 2,
+        "from_mood": "neutral",
+        "to_mood": "sad",
+        "confidence_change": 0.5
+      },
+      {
+        "position": 3,
+        "from_mood": "sad",
+        "to_mood": "neutral",
+        "confidence_change": 0.5
+      }
+    ],
+    "sentiment_transitions": [
+      {
+        "position": 3,
+        "from_sentiment": "neutral",
+        "to_sentiment": "positive",
+        "valence_change": 1.0
+      }
+    ],
+    "total_transitions": 4
+  }
+}
